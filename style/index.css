@@ -1,0 +1,634 @@
+@font-face {
+    font-family: 'BodoniFLF';
+    src: url('../assets/fonts/bodoniflf-cufonfonts/BodoniFLF-Bold.ttf') format('truetype'),
+         url('../assets/fonts/bodoniflf-cufonfonts/BodoniFLF-BoldItalic.ttf') format('truetype'),
+         url('../assets/fonts/bodoniflf-cufonfonts/BodoniFLF-Italic.ttf') format('truetype'),
+         url('../assets/fonts/bodoniflf-cufonfonts/BodoniFLF-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BodoniFLF';
+    src: url('../assets/fonts/bodoniflf-cufonfonts/BodoniFLF-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BodoniFLF';
+    src: url('../assets/fonts/bodoniflf-cufonfonts/BodoniFLF-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'BodoniFLF';
+    src: url('../assets/fonts/bodoniflf-cufonfonts/BodoniFLF-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  /* Montserrat Regular */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-cufonfonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Montserrat Italic */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-cufonfonts/Montserrat-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  /* Montserrat Thin */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-cufonfonts/Montserrat-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  /* Montserrat Thin Italic */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-cufonfonts/Montserrat-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  /* Montserrat ExtraLight */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-cufonfonts/Montserrat-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  /* Montserrat ExtraLight Italic */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-cufonfonts/Montserrat-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  /* Montserrat Light */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-cufonfonts/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  /* Montserrat Light Italic */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-cufonfonts/Montserrat-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  /* Montserrat Medium */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-cufonfonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  /* Montserrat Medium Italic */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-cufonfonts/Montserrat-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  /* Montserrat SemiBold */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-cufonfonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  /* Montserrat SemiBold Italic */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-cufonfonts/Montserrat-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  /* Montserrat Bold */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-cufonfonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  /* Montserrat Bold Italic */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-cufonfonts/Montserrat-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  /* Montserrat Black */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-cufonfonts/Montserrat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  /* Montserrat Black Italic */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/montserrat-cufonfonts/Montserrat-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+
+body{
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', serif;
+
+}
+
+.header{
+    padding: 10px 40px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 200px;
+    }
+    
+}
+.button{
+    padding: 20px 20px;
+     background-image: linear-gradient(130deg, #FF162A 0%, #E5731E 100%);
+     color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.hero{
+    position: relative;
+    height: calc(100vh - 88px);
+    overflow: hidden;
+    
+    video{
+        width: 100%;
+        object-fit: cover;
+    }
+    .layer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .hero__text{
+        position: absolute;
+        width: 50%;
+        left: 30%;
+        top: 50%;
+        color: white;
+        transform: translate(-50%, -50%);
+        h1{
+            font-size:18px;
+        }
+        h2{
+            font-size: 26px;
+            line-height: 1.4;
+            margin: 10px 0;
+        
+        }
+        button{
+            margin-top: 20px;
+          
+        }
+    }
+}
+.navigation{
+    ul{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        a{
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        li{
+            margin: 0 10px;
+            
+        }
+    }
+}
+
+.main{
+    .container__main{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        .der,.izq{
+            width: 40%;
+        }
+        .izq {
+            position: relative;
+            margin-top: 50px;
+            .picture1{
+                position: relative;
+                overflow: hidden;
+                padding-left: 40px;
+                padding-bottom: 40px;
+                max-width: 450px;
+                overflow: hidden;
+            }
+            .img1{
+                width: 100%;
+            }
+        }
+
+        .shape1{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-bottom: 177px solid #E5731E;
+            border-right: 197px solid transparent;
+            z-index: -1;
+        }
+        .shape2{
+            position: absolute;
+            top: -15px;
+            right: -79px;
+            width: 24px;
+            height: 24px;
+            margin-top: 15px;
+            margin-right: 15px;
+            background: linear-gradient(to right, #FF162A, #E5731E);
+        }
+        .shape2::before{
+            content: "";
+            width: 11px;
+            height: 11px;
+            display: inline-block;
+            position: absolute;
+            right: -15px;
+            top: -15px;
+            background: linear-gradient(to right, #FF162A, #E5731E);
+        }
+
+
+        .der{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+
+            p{
+                font-size: 18px;
+                line-height: 30px;
+            }
+            ul{
+                li{
+                    margin: 10px 0;
+                    align-items: center;
+                    line-height: 30px;
+
+                    img{
+                        margin-right: 10px;
+                    }
+                }
+            }
+         
+        }
+        
+
+    }
+}
+
+.services{
+    padding: 50px 0;
+    margin: 50px 0;
+    background-color: #E7FBFE;
+    .services__container{
+        width: 80%;
+        margin: auto;
+    }
+    .title{
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 40px;
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    .sub-title{
+        text-align: center;
+        margin: 0px 0;
+    }
+    .splide{
+        margin-top: 30px;
+    }
+    .card{ 
+        background-color: #fff;
+        height: 300px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        cursor: pointer;
+        box-shadow: 0 10px 30px 0 rgba(0,0,0,.07);
+            h2{
+            font-size: 120px; 
+            color: transparent; 
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #e5731e;
+            font-family: 'TuFuente', sans-serif; 
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        h3{
+            width: 80%;
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 350px; /* Could be more or less, depending on screen size */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.about{
+    padding: 50px 0;
+    .about__container{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        .der,.izq{
+            width: 40%;
+        }
+        .izq{
+            
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 50%;
+    
+                p{
+                    font-size: 38px;
+                    font-weight: 700;
+                    line-height: 70px;
+                }
+            
+        }
+        .about__text{
+            width: 50%;
+            h2{
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+        .about__img{
+            width: 40%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.clients {
+    background-color: #ffffff; /* o el color de fondo que prefieras */
+    text-align: center; /* Centrar el contenido */
+    padding: 50px 0; /* Espacio arriba y abajo */
+}
+
+.clients__container {
+    max-width: 1200px; /* o el ancho máximo que prefieras */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.title {
+    font-size: 2em; /* Tamaño del título */
+    margin-bottom: 25px; /* Espacio debajo del título */
+    color: #333; /* Color del texto del título */
+}
+
+.clients__logos img {
+    height: 50px; /* o la altura que prefieras para los logos */
+    margin: 0 10px; /* Espacio horizontal entre logos */
+    opacity: 0.7; /* Opacidad para dar efecto de desactivado */
+    filter: grayscale(1);
+    transition: opacity 0.3s ease-in-out; /* Transición suave de opacidad */
+}
+
+.clients__logos img:hover {
+    opacity: 1; /* Opacidad completa al pasar el ratón por encima */
+}
+
+.contact-section {
+   width: 80%;
+    margin: auto;
+}	
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+
+}
+
+.contact-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.contact-info p {
+    margin-bottom: 1em;
+}
+
+.contact-info form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info input,
+.contact-info textarea,
+.contact-info select
+{
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-info button {
+    padding: 10px;
+    background-color: #005
+ab;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.contact-info button:hover {
+background-color: #003e5b;
+}
+
+.contact-image {
+width: 40%;
+text-align: center; /* Asegúrate de que la imagen y el texto estén centrados */
+}
+
+.contact-image img {
+max-width: 100%; /* Asegúrate de que la imagen no sea más grande que su contenedor /
+height: auto;
+border-radius: 10px; / Opcional: bordes redondeados para la imagen */
+}
+
+.contact-image p {
+margin-top: 1em;
+font-style: italic;
+}
+
+/* Añade media queries para responsividad si es necesario */
+@media (max-width: 768px) {
+.contact-section {
+flex-direction: column;
+}
+.contact-info, .contact-image {
+width: 100%;
+}
+}
+
+
+.statistics {
+    background-color: transparent;
+    background-image: linear-gradient(130deg, #DA7801 0%, #FF003F 100%);    color: #fff; /* Color del texto */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.statistics__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.stat {
+    margin: 10px;
+    flex-basis: calc(33.333% - 20px); /* Tres estadísticas por fila con espacio en blanco */
+}
+
+.stat h3 {
+    font-size: 2.5rem; /* Tamaño grande para el número */
+    margin: 0 0 10px 0;
+}
+
+.stat p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+footer{
+    background-image: linear-gradient(130deg, #FF162A 0%, #E5731E 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    h2{
+        margin: 0;
+        padding: 20px 0;
+        color: white;
+    }
+    img{
+        width: 150px;
+        padding: 20px;
+    }
+}
+
+/* Añade media queries para responsividad si es necesario */
+@media (max-width: 768px) {
+    .stat {
+        flex-basis: calc(50% - 20px); /* Dos estadísticas por fila en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .stat {
+        flex-basis: 100%; /* Una estadística por fila en pantallas muy pequeñas */
+    }
+}

@@ -209,7 +209,8 @@ body{
     .hero__text{
         position: absolute;
         width: 50%;
-        left: 30%;
+        text-align: center;
+        left: 51%;
         top: 50%;
         color: white;
         transform: translate(-50%, -50%);
@@ -247,11 +248,14 @@ body{
 }
 
 .main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
     .container__main{
-        width: 80%;
+        width: 90%;
         margin: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         .der,.izq{
             width: 40%;
         }
@@ -305,18 +309,32 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 50%;
-
+            width: 80%;
+            h2{
+                margin-bottom: 0;
+                margin-top: 20px;
+                text-align: center;
+            }
             p{
                 font-size: 18px;
                 line-height: 30px;
+                margin-bottom: 0;
+                text-align: center;
             }
             ul{
+                padding: 0;
+                display: flex;
+                gap: 40px;
+                list-style: none;
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
                 li{
                     margin: 10px 0;
                     align-items: center;
                     line-height: 30px;
-
+                    width: 30%;
+                    text-align: center;
                     img{
                         margin-right: 10px;
                     }
@@ -461,32 +479,32 @@ body{
 }
 
 .clients {
-    background-color: #ffffff; /* o el color de fondo que prefieras */
-    text-align: center; /* Centrar el contenido */
-    padding: 50px 0; /* Espacio arriba y abajo */
+    background-color: #ffffff; 
+    text-align: center; 
+    padding: 50px 0; 
 }
 
 .clients__container {
-    max-width: 1200px; /* o el ancho máximo que prefieras */
-    margin: 0 auto; /* Centrar el contenedor */
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .title {
-    font-size: 2em; /* Tamaño del título */
-    margin-bottom: 25px; /* Espacio debajo del título */
-    color: #333; /* Color del texto del título */
+    font-size: 2em;
+    margin-bottom: 25px;
+    color: #333; 
 }
 
 .clients__logos img {
-    height: 50px; /* o la altura que prefieras para los logos */
-    margin: 0 10px; /* Espacio horizontal entre logos */
-    opacity: 0.7; /* Opacidad para dar efecto de desactivado */
+    height: 50px; 
+    margin: 0 10px; 
+    opacity: 0.7; 
     filter: grayscale(1);
-    transition: opacity 0.3s ease-in-out; /* Transición suave de opacidad */
+    transition: opacity 0.3s ease-in-out; 
 }
 
 .clients__logos img:hover {
-    opacity: 1; /* Opacidad completa al pasar el ratón por encima */
+    opacity: 1; 
 }
 
 .contact-section {
@@ -549,7 +567,7 @@ background-color: #003e5b;
 
 .contact-image {
 width: 40%;
-text-align: center; /* Asegúrate de que la imagen y el texto estén centrados */
+text-align: center; 
 }
 
 .contact-image img {
@@ -563,7 +581,6 @@ margin-top: 1em;
 font-style: italic;
 }
 
-/* Añade media queries para responsividad si es necesario */
 @media (max-width: 768px) {
 .contact-section {
 flex-direction: column;
@@ -576,7 +593,7 @@ width: 100%;
 
 .statistics {
     background-color: transparent;
-    background-image: linear-gradient(130deg, #DA7801 0%, #FF003F 100%);    color: #fff; /* Color del texto */
+    background-image: linear-gradient(130deg, #DA7801 0%, #FF003F 100%);    color: #fff; 
     padding: 20px 0;
     text-align: center;
 }
@@ -591,11 +608,11 @@ width: 100%;
 
 .stat {
     margin: 10px;
-    flex-basis: calc(33.333% - 20px); /* Tres estadísticas por fila con espacio en blanco */
+    flex-basis: calc(33.333% - 20px); 
 }
 
 .stat h3 {
-    font-size: 2.5rem; /* Tamaño grande para el número */
+    font-size: 2.5rem;
     margin: 0 0 10px 0;
 }
 
@@ -620,15 +637,14 @@ footer{
     }
 }
 
-/* Añade media queries para responsividad si es necesario */
 @media (max-width: 768px) {
     .stat {
-        flex-basis: calc(50% - 20px); /* Dos estadísticas por fila en pantallas más pequeñas */
+        flex-basis: calc(50% - 20px); 
     }
 }
 
 @media (max-width: 480px) {
     .stat {
-        flex-basis: 100%; /* Una estadística por fila en pantallas muy pequeñas */
+        flex-basis: 100%; 
     }
 }

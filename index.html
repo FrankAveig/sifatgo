@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Siftago</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="about.html">Servicios</a></li>
-                <li><a href="contact.html">Agencia</a></li>
+                <li><a href="contact.html">Nosotros</a></li>
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
@@ -23,11 +25,11 @@
         <div class="layer"></div>
         <video src="./assets/video/hero.mp4" autoplay loop muted> </video>
         
-        <div class="hero__text">
-            <h1>Te convertimos en lo primero que piensa tu cliente!</h1>
-            <h2>Te ayudamos a captar leads, incrementar ventas, 
-                posicionarse en Internet, digitalizar tu negocio e 
-                impulsar la valoración de tu marca. </h2>
+        <div class="hero__text"  >
+            <h1>¡Te convertimos en lo primero que piensa tu cliente!</h1>
+            <h2>Te ayudamos a captar potenciales clientes, incrementar tus ventas, 
+                posicionarte a través de las redes sociales, digitalizar tu negocio e 
+                impulsar tu marca. </h2>
                 <button class="button">Agenda una cita</button>
             </div>
     </section>
@@ -35,7 +37,7 @@
         <div class="container__main">
             
 
-        <article class="izq">
+     <!--    <article class="izq"  data-aos="fade-right"  data-aos-duration="2000">
             <picture class="picture1">
                 <img  class="img1" src="./assets/images/body/home1.jpg" alt="">
             </picture>
@@ -45,28 +47,27 @@
 
                 <img src="" alt="">
             </picture>
-        </article>
-        <article class="der">
-            <h2>¿Por qué elegirnos?</h2>
-            <p>Porque somos una agencia de marketing digital que 
-                ofrece soluciones integrales para tu negocio. 
-                Nuestro equipo de expertos en marketing digital 
-                te ayudará a alcanzar tus objetivos. </p>
+        </article> -->
+        <article class="der" >
+            <h2 data-aos="zoom-in"  data-aos-duration="2000">¿Por qué elegirnos?</h2>
+            <p data-aos="zoom-in"  data-aos-duration="2000">Porque ofrecemos soluciones integrales para tu negocio como: </p>
             <ul>
-                <li>Aterrizaje de tu marca: Creamos una presencia sólida 
-                    y coherente para tu marca
+                <li data-aos="fade-right"  data-aos-duration="2000">Aterrizaje de tu marca: Creamos la imagen de tu negocio que causa impacto<!--  y se quede grabada en la mente de tus clientes.Será el primer paso para destacar en este mundo tan competitivo. -->
                 </li>
-                <li>
-                    Resultados reales: Nos enfocamos en acciones concretas
-                    que generan un impacto medible.
+                <li data-aos="zoom-in"  data-aos-duration="2000">
+                    Te dirigimos con informes claros y sencillos, para que conozcas el progreso de tu marca<!-- , queremos que veas el progreso de tu marca y maximizar el retorno de tu inversión. -->
+
                 </li>
-                <li>
-                    Público objetivoÑ Conocemos a tu audiencia, adaptando estrategias
-                    para llegar a ellos de manera efectiva.
+                <li data-aos="fade-left"  data-aos-duration="2000">
+                    Definimos tu publico objetivo para impulsar las ventas de tu negocio.
+
                 </li>
-                <li>
-                    Inteligencia ArtificialÑ Fusionamos la creatividad humana con
-                    la potencia de la IA para optimizar y personalizar estrageigas.
+                <li data-aos="fade-right"  data-aos-duration="2000">
+                    Inteligencia Artificial: Fusionamos la creatividad humana con
+                    la potencia de la IA para optimizar y personalizar estrategias efectivas.
+                </li>
+                <li data-aos="fade-left"  data-aos-duration="2000">
+                    Estamos en cada etapa de tus proyectos asegurando que alcances tus objetivos comerciales de manera efectiva.
                 </li>
             </ul>
            
@@ -110,7 +111,7 @@
                     <li class="splide__slide">
                         <div class="card">
                             <h2>04</h2>
-                            <h3>Asesorías personalizadas y grupales</h3>
+                            <h3>Cursos</h3>
                             <img src="" alt="">
                         </div>
                     </li>
@@ -215,5 +216,13 @@
       
       </script>
       <script src="./js/modal.js"></script>
-      <script src="https://kit.fontawesome.com/276faf51c6.js" crossorigin="anonymous"></script></body>
+      <script src="https://kit.fontawesome.com/276faf51c6.js" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <script>
+        AOS.init();
+      </script>
+    
+    
+    </body>
 </html>
